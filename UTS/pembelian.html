@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: whitesmoke;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: lightgreen;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas Front-End</title>
+
+    <div class="contain">
+        <nav class="isi">
+            <a href="materi_css.html"><img src="Front end/SCHOOLER LOGO.png" alt="logo" class="logo"></a>
+
+            <ul class="navigasi">
+                <li><a href="materi_css.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="fabric.html">Fabric</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</head>
+
+<body>
+    <form>
+        <h2>Form Pemesanan Baju</h2>
+
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" required>
+
+        <label for="ukuran">Ukuran:</label>
+        <select id="ukuran" name="ukuran" required>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+            <option value="XXXL">XXXL</option>
+        </select>
+
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" required>
+        <button><a href="#popup_pembelian" style="text-decoration: none; color: black;">Book Now</a></button>
+    </form>
+
+    <div class="popup_book" id="popup_pembelian">
+        <div class="popup_content">
+            <div class="popup_img">
+                <a href="catalog.html" class="popup_close">&times;</a>
+            </div>
+            <div class="popup_head">
+                <h1>THANK YOU</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

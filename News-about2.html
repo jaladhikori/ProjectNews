@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="berita.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .news-article {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .article-meta {
+            color: #777;
+            font-size: 0.8em;
+        }
+
+        #more {
+            display: none;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #004080; position: sticky; margin-top: -10px;">
+          <a class="navbar-brand"><img src="FOTO/Globe Logo Breaking News PNG - Free Download.png" width="100" height="100"></a>
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <a href="berlangganan.html" class="btn btn-outline-primary ms-2">Berlangganan</a>
+          </form>
+        </div>
+      </nav>
+    
+    
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-bawah" style="background-color: #004080;" >
+          <div class="container-fluid" id="#lagi" style="margin-top: -10px; margin-bottom: -10px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="home.html" style="color: white;">Home</a>
+                <a class="nav-link" href="News-1.html" style="color: white;">News</a>
+                <a class="nav-link" href="about.us.html" style="color: white;">About us</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+    <article class="news-article">
+        <h2>Sindiran Berjemaah Netizen usai Akun Kemhan Ungkap Jumlah Jet Tempur</h2>
+        <img src="f7d839da-5fde-4e76-9252-25f7349e7ced_169.jpg" alt="Jet Tempur Image">
+        <p class="article-meta">Published on January 21, 2024</p>
+        <p>Jakarta, CNN Indonesia -- Warganet ramai-ramai menyindir Menteri Pertahanan Prabowo Subianto usai akun Twitter atau X milik Kementerian Pertahanan mengunggah angka total pesawat tempur RI.
+            Sebelumnya, Prabowo, dalam debat calon presiden, tak bisa menjawab pertanyaan lawan-lawannya soal alat utama sistem senjata (alutsista) dengan dalih rahasia negara.
+            "TNI AU saat ini memiliki 466 unit armada pesawat, dan di awal tahun 2026 secara bertahap akan diperkuat 42 jet tempur Rafale Dassault Aviation, bagian dari upaya modernisasi Menteri Pertahanan Prabowo Subianto," kicau akun @Kemhan_RI, Rabu (17/1).Akun ini juga mengungkap Kepala Staf Angkatan Udara (KSAU) Marsekal TNI Fadjar Prasetyo menepis isu "bahwa kesiapan pesawat tempur Indonesia rendah.
+            "Ditegaskannya, walaupun mengalami kendala dalam pemenuhan suku cadang pesawat Sukhoi imbas perang Rusia dan Ukraina, TNI AU mampu mengatasinya, dan memperlihatkan kepada rakyat Indonesia," kicau akun Kemhan.
+            "bahwa TNI AU selalu siap mempertahankan kedaulatan udara Nusantara."
+            Sebelumnya, Prabowo ogah mengungkap data alutsista saat debat capres dengan capres Anies Baswedan dan capres Ganjar Pranowo dengan dalih rahasia negara dalam debat ketiga Pilpres 2024 di Istora Senayan, Jakarta, Minggu (7/1) malam.</p>
+
+        <p>"Jadi saya mengundang, kita bicara, terbuka, Silahkan," Prabowo malah mengajak dua kompetitornya untuk bicara alutsista secara personal.</p>
+        <p id="dots">...</p>
+        <p id="more" style="display:none;">"Tapi saya ingatkan, Bapak cinta atau tidak dengan negara ini? Masa kita mau buka semua kekurangan kita, semua masalah kita, kita buka di depan umum. Apakah itu pantas? Di negara yang baik, di negara maju, masalah rahasia ada, Profesor,"</p>
+
+        <button onclick="toggleText()" id="toggleBtn">Read more</button>
+    </article>
+
+    <script>
+        function toggleText() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("toggleBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>

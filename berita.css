@@ -1,0 +1,210 @@
+#nav-bawah {
+    margin-top: -5px;
+}
+
+
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.navbar-visible {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.container-utama {
+    margin: auto;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.container-text-center {
+    background-color: white;
+}
+
+
+
+.container-1 {
+    position: relative;
+}
+
+.container-1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-1 h1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.container-2 {
+    position: relative;
+}
+
+.container-2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-2 h1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.container-3 {
+    position: relative;
+}
+
+.container-3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-3 h1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.container-4 {
+    position: relative;
+}
+
+.container-4 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-4 h1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.container-5 {
+    position: relative;
+}
+
+.container-5 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-5 h1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.container-6 {
+    position: relative;
+}
+
+.container-6 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-6 h1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.container-7 {
+    position: relative;
+}
+
+.container-7 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-7 h1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.container-8 {
+    position: relative;
+}
+
+.container-8 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-8 h1 {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+#mobil-listrik {
+    text-decoration: none;
+    color: black;
+}
+
+#game-pubg .card-body p {
+    text-decoration: none;
+    color: black;
+  }
+  
+
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 12px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
